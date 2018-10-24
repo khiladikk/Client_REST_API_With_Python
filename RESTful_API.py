@@ -16,14 +16,13 @@ data = {
         "Branch" : "CSE"
         }
 
-
+#Sending some information from the Server
 response = requests.post(url, json=data)
-
 
 print(response.text)
 
-#to extract the detail from response
-
+#To extract the detail from response
+#Receiving some information from the Server by calling server's REST API
 import requests
 
 api_url = 'http://13.127.155.43/api_v0.1/receiving'
